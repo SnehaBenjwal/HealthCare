@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialists - MediConnect</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="navbar bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="logo text-2xl font-bold text-blue-600">
+                <h1>MediConnect</h1>
+            </div>
+            <ul class="nav-links hidden md:flex space-x-6 text-gray-700">
+                <li><a href="../src/index123.html" class="hover:text-blue-600">Home</a></li>
+                <li><a href="../src/consultation.html" class="text-blue-600 font-semibold">Specialists</a></li>
+                <li><a href="../src/doctors.html" class="hover:text-blue-600">Doctors</a></li>
+                <li><a href="../src/insights.html" class="hover:text-blue-600">Health Insights</a></li>
+                <li><a href="../src/contact.html" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+            <div class="hamburger md:hidden flex flex-col space-y-1 cursor-pointer">
+                <span class="block w-6 h-0.5 bg-gray-700"></span>
+                <span class="block w-6 h-0.5 bg-gray-700"></span>
+                <span class="block w-6 h-0.5 bg-gray-700"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Specialists Hero -->
+    <section class="consultation-hero bg-gradient-to-r from-blue-500 to-blue-300 text-white py-16 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-4" data-aos="fade-up">Our Specialists</h1>
+            <p class="text-lg opacity-90" data-aos="fade-up" data-aos-delay="100">Expert medical care from our team of specialists</p>
+        </div>
+    </section>
+
+    <!-- Specialist Filters -->
+    <section class="filters py-8 bg-green-300">
+        <div class="container mx-auto flex flex-wrap justify-center gap-4">
+            <button class="filter-btn bg-white text-gray-700 py-2 px-6 rounded-full shadow-md hover:bg-blue-600 hover:text-white active:bg-blue-600" data-filter="all">All Specialists</button>
+            <button class="filter-btn bg-white text-gray-700 py-2 px-6 rounded-full shadow-md hover:bg-blue-600 hover:text-white" data-filter="cardiology">Cardiology</button>
+            <button class="filter-btn bg-white text-gray-700 py-2 px-6 rounded-full shadow-md hover:bg-blue-600 hover:text-white" data-filter="pediatrics">Pediatrics</button>
+        </div>
+    </section>
+
+    <!-- Specialists Grid -->
+    <section class="doctors-grid py-16">
+        <div class="container mx-auto flex flex-wrap justify-center items-center gap-8">
+            <!-- Specialist Card 1 -->
+            <div class="doctor-card bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-specialty="cardiology">
+                <div class="doctor-info p-6">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Dr. Michael Chen</h3>
+                    <p class="specialty text-gray-600 mb-4">Cardiology</p>
+                    <div class="rating flex items-center text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="ml-2 text-gray-600">5.0</span>
+                    </div>
+                    <div class="specialist-details text-gray-700">
+                        <p class="experience mb-2 leading-relaxed"><strong>Experience:</strong> 15+ years of specialized practice in cardiology</p>
+                        <p class="qualifications mb-2 leading-relaxed"><strong>Qualifications:</strong> MD, FACC, Interventional Cardiology</p>
+                        <p class="education mb-2 leading-relaxed"><strong>Education:</strong> 
+                            <ul class="list-disc list-inside">
+                                <li class="text-blue-600">MD from Johns Hopkins University School of Medicine</li>
+                                <li class="text-blue-600">Fellowship in Interventional Cardiology at Mayo Clinic</li>
+                                <li class="text-blue-600">Board Certified in Cardiovascular Disease</li>
+                            </ul>
+                        </p>
+                        <p class="expertise mb-2"><strong>Areas of Expertise:</strong>
+                            <ul class="list-disc list-inside">
+                                <li>Coronary Artery Disease</li>
+                                <li>Heart Failure Management</li>
+                                <li>Interventional Procedures</li>
+                                <li>Preventive Cardiology</li>
+                            </ul>
+                        </p>
+                        <p class="achievements mb-2"><strong>Notable Achievements:</strong>
+                            <ul class="list-disc list-inside">
+                                <li>Published over 50 research papers in leading cardiology journals</li>
+                                <li>Recipient of the American Heart Association's Excellence in Cardiology Award</li>
+                                <li>Pioneered innovative techniques in minimally invasive cardiac procedures</li>
+                            </ul>
+                        </p>
+                        <p class="availability leading-relaxed"><strong>Availability:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specialist Card 2 -->
+            <div class="doctor-card bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100" data-specialty="pediatrics">
+                <div class="doctor-info p-6">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Dr. Sarah Johnson</h3>
+                    <p class="specialty text-gray-600 mb-4">Pediatrics</p>
+                    <div class="rating flex items-center text-yellow-500 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="ml-2 text-gray-600">4.5</span>
+                    </div>
+                    <div class="specialist-details text-gray-700">
+                        <p class="experience mb-2 leading-relaxed"><strong>Experience:</strong> 12+ years of dedicated pediatric care</p>
+                        <p class="qualifications mb-2 leading-relaxed"><strong>Qualifications:</strong> MD, FAAP, Pediatric Care</p>
+                        <p class="education mb-2 leading-relaxed"><strong>Education:</strong>
+                            <ul class="list-disc list-inside">
+                                <li class="text-blue-600">MD from Harvard Medical School</li>
+                                <li class="text-blue-600">Pediatric Residency at Boston Children's Hospital</li>
+                                <li class="text-blue-600">Board Certified in Pediatrics</li>
+                            </ul>
+                        </p>
+                        <p class="expertise mb-2 leading-relaxed"><strong>Areas of Expertise:</strong>
+                            <ul class="list-disc list-inside">
+                                <li>Newborn and Infant Care</li>
+                                <li>Childhood Development</li>
+                                <li>Pediatric Nutrition</li>
+                                <li>Adolescent Medicine</li>
+                            </ul>
+                        </p>
+                        <p class="achievements mb-2"><strong>Notable Achievements:</strong>
+                            <ul class="list-disc list-inside">
+                                <li>Developed innovative pediatric care protocols</li>
+                                <li>Recipient of the Pediatric Excellence Award</li>
+                                <li>Active member of the American Academy of Pediatrics</li>
+                            </ul>
+                        </p>
+                        <p class="availability leading-relaxed"><strong>Availability:</strong> Monday - Saturday, 8:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-blue-600 text-white py-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="footer-section">
+                <h3 class="text-xl font-bold mb-4">MediConnect</h3>
+                <p>Your trusted partner in healthcare.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="../src/index123.html" class="hover:underline">Home</a></li>
+                    <li><a href="../src/consultation.html" class="hover:underline">Specialists</a></li>
+                    <li><a href="../src/doctors.html" class="hover:underline">Doctors</a></li>
+                    <li><a href="../src/insights.html" class="hover:underline">Health Insights</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p>Email: info@mediconnect.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center mt-8">
+            <p>&copy; 2025 MediConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/consultation.js"></script>
+</body>
+</html>

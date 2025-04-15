@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - MindHorizon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+</head>
+<body class="min-h-screen bg-gradient-to-r from-blue-200 via-teal-200 to-green-200 flex items-center justify-center p-6">
+
+    <div class="bg-white p-6 rounded-xl shadow-xl w-full max-w-sm">
+
+        <!-- Logo & Branding -->
+        <h2 class="text-center text-3xl font-semibold text-blue-600 mb-4">MediConnect</h2>
+        <p class="text-center text-sm text-gray-600 mb-4">A calming space for mental wellness.</p>
+
+        <!-- Registration Form -->
+        <form action="../src/register.php" method="POST" class="space-y-4">
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700">First Name</label>
+                <input type="text" name="first_name" required
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-400 focus:outline-none text-gray-700 text-sm">
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" name="email" required
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-400 focus:outline-none text-gray-700 text-sm">
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Password</label>
+                <input type="password" name="password" required
+                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-400 focus:outline-none text-gray-700 text-sm">
+            </div>
+
+            <button type="submit"
+                class="w-full bg-blue-500 text-white py-2 rounded-lg font-medium text-sm hover:bg-teal-600 transition duration-200">
+                Sign Up
+            </button>
+        </form>
+
+        <!-- Divider -->
+        <div class="flex items-center my-4">
+            <hr class="w-full border-gray-300">
+            <span class="px-2 text-gray-500 text-xs">or</span>
+            <hr class="w-full border-gray-300">
+        </div>
+
+        <!-- OAuth Signup -->
+        <div class="space-y-2">
+           
+            <button class=" social w-full border py-2 rounded-md text-teal-600 hover:bg-teal-50 hover:text-teal-700 transition-all text-xs"><i class="fa-brands fa-google"></i>
+                Sign Up with Google
+            </button>
+            <button class="w-full border py-2 rounded-md text-teal-600 hover:bg-teal-50 hover:text-teal-700 transition-all text-xs "><i class="fab fa-facebook-f"></i>
+                Sign Up with Facebook
+            </button></button>
+            <button class="w-full border py-2 rounded-md text-teal-600 hover:bg-teal-50 hover:text-teal-700 transition-all text-xs"><i class="fa-brands fa-apple"></i>
+                Sign Up with Apple
+            </button>
+        </div>
+
+        <!-- Login Link -->
+        <p class="text-center text-xs mt-4 text-gray-600">
+            Already have an account? <a href="../src/login.html" class="text-teal-500 font-medium">Sign in</a>
+        </p>
+
+    </div>
+
+</body>
+</html>
